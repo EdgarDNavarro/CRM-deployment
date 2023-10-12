@@ -1,0 +1,21 @@
+{
+  "name": "restapis",
+  "version": "1.0.0",
+  "description": "REST APIS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "author": "Edgar Daniel Navarro",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.3",
+    "multer": "^1.4.5-lts.1",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
