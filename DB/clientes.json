@@ -1,0 +1,6 @@
+{"_id":{"$oid":"6520578cb31cf6363587b498"},"nombre":"Edgar","apellido":"Navarro","empresa":"Google","email":"edgar@gmail.com","telefono":"04243398140","__v":0}
+{"_id":{"$oid":"652422f58e25331b34ca5a40"},"nombre":"Daniel","apellido":"Perez","empresa":"sIsi","email":"d5@d.com","telefono":"123654","__v":0}
+{"_id":{"$oid":"65242ca68e25331b34ca5a52"},"nombre":"Marcos","apellido":"Perez","empresa":"FranOs","email":"m@m.com","telefono":"123","__v":0}
+{"_id":{"$oid":"65256bdd5b68332c730af470"},"nombre":"Juan","apellido":"Hernandez","empresa":"Chocolate","email":"j@j.com","telefono":"12333256","__v":0}
+{"_id":{"$oid":"652d54531b5ac691b8bbebe4"},"nombre":"Jhon","apellido":"Alejandro","empresa":"Calle 13","email":"ezq@ezq.com","telefono":"123","__v":0}
+{"_id":{"$oid":"652d7dfbbe0d2775d04fad84"},"nombre":"Daniel","apellido":"Navarro","empresa":"Purpura","email":"edgardaniel@gmail.com","telefono":"11111111","__v":0}

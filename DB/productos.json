@@ -1,0 +1,4 @@
+{"_id":{"$oid":"652d48d68448871e813b5b83"},"nombre":"Corte de Cabello","precio":25,"imagen":"OpfTQhEe-.jpeg","__v":0}
+{"_id":{"$oid":"652d49fe8448871e813b8313"},"nombre":"Camisa Node","precio":30,"imagen":"tqGxb1GzQ.jpeg","__v":0}
+{"_id":{"$oid":"652d4a118448871e813b89a6"},"nombre":"HTML5","precio":21,"imagen":"3HXRry4YI.jpeg","__v":0}
+{"_id":{"$oid":"652d50093717c42f7f5c83cc"},"nombre":"camisa SASS","precio":10,"imagen":"lcBYUcmPt.jpeg","__v":0}

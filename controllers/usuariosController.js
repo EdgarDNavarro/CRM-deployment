@@ -37,7 +37,7 @@ exports.autenticarUsuario = async (req, res, next) => {
                 id: usuario._id
             }, 'LLAVESECRETA',
             {
-                expiresIn: '30s'
+                expiresIn: '8h'
             })
             //retornar el token 
             res.json({ token })
