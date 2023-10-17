@@ -22,10 +22,13 @@ app.use(bodyParser.urlencoded({extended: true}))
 const whiteList = [process.env.FRONTEND_URL]
 const corsOptions = {
     origin: (origin, callback) => {
+        console.log('------------------')
         console.log(origin)
         console.log(process.env.FRONTEND_URL)
+        console.log('------------------')
         //Revisar que la peticion venga de la white list
-        const existe = whiteList.some( dominio => dominio === origin )
+        // const existe = whiteList.some( dominio => dominio === origin )
+        var existe = whiteList.indexOf(origin) !== -1
         if(existe) {
             callback(null, true)
         } else {
@@ -33,6 +36,8 @@ const corsOptions = {
         }
     }
 }
+
+
 app.use(cors(corsOptions))
 
 
@@ -40,10 +45,9 @@ app.use('/', router())
 
 
 
-const host = process.env.HOST || '0.0.0.0'
 const port = process.env.PORT || 5000
 
 //Iniciar app
-app.listen(port, host, () => {
+app.listen(port, () => {
     console.log('El servidor esta funcionando')
 })
