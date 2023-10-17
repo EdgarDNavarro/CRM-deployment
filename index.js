@@ -13,6 +13,8 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const app = express()
 
+app.use(express.static('uploads'))
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
@@ -34,7 +36,7 @@ app.use(cors(corsOptions))
 
 app.use('/', router())
 
-app.use(express.static('uploads'))
+
 
 const host = process.env.HOST || '0.0.0.0'
 const port = process.env.PORT || 5000
