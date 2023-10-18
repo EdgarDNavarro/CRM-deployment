@@ -8,7 +8,8 @@ require('dotenv').config({path: 'variables.env'})
 //Conectar Mongo
 mongoose.Promise = global.Promise
 const db = process.env.DB_URL;
-mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+
 
 
 const app = express()
@@ -22,10 +23,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 const whiteList = [process.env.FRONTEND_URL]
 const corsOptions = {
     origin: (origin, callback) => {
-        console.log('------------------')
-        console.log(origin)
-        console.log(process.env.FRONTEND_URL)
-        console.log('------------------')
         //Revisar que la peticion venga de la white list
         // const existe = whiteList.some( dominio => dominio === origin )
         var existe = whiteList.indexOf(origin) !== -1
